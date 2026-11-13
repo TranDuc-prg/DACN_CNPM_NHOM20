@@ -1,0 +1,33 @@
+BANTHUOC_chot/
+│
+├── config/
+│   ├── db.php
+│   ├── ai.php
+│   ├── chat_config.php
+│   ├── chat_helpers.php
+│   └── vnpay_config.php
+├── login.php
+├── register.php
+├── logout.php
+├── admin_users.php
+├── product.php
+├── chitietsp.php
+├── load_products.php
+├── themsp.php
+├── cart.php
+├── track-order.php
+├── invoice.php
+├── vnpay_return.php
+├── add_post.php
+├── edit_post.php
+├── delete_post.php
+├── chat_live_api.php
+├── admin_chat_api.php
+├── admin_chat.php
+├── ai_chat.php
+├── chatbot_widget.php
+├── get_chart_data.php
+├── export_pdf.php
+├── export_excel.php
+├── composer.json
+└── vendor/
