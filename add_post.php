@@ -8,7 +8,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $video_url = $_POST['video_url']; // Lấy link video
     $created_at = date('Y-m-d H:i:s');
 
-    // Xử lý Upload Ảnh
     $image_url = "";
     if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
         $target_dir = "images/"; 
