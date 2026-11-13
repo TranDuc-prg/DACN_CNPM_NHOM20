@@ -1,0 +1,19 @@
+
+        :root { --sidebar-bg: #0f172a; --primary-blue: #2563eb; }
+        body { background: #f8fafc; font-family: 'Segoe UI', sans-serif; overflow-x: hidden; }
+        .sidebar { width: 240px; height: 100vh; background: var(--sidebar-bg); color: white; position: fixed; left:0; top:0; z-index: 1000; transition: 0.3s; }
+        .sidebar a { display: block; color: #94a3b8; padding: 12px 25px; text-decoration: none; transition: 0.2s; }
+        .sidebar a:hover, .sidebar a.active { background: #1e293b; color: white; border-left: 4px solid var(--primary-blue); }
+        .main { margin-left: 240px; padding: 35px; min-height: 100vh; transition: 0.3s; }
+        .table-box { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); margin-bottom: 25px; }
+        .card-stat { border-radius: 12px; border: none; color: white; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .btn-round { border-radius: 50px; font-weight: 600; padding: 8px 20px; }
+        .badge { padding: 6px 12px; border-radius: 6px; }
+        @media (max-width: 768px) { .sidebar { width: 70px; } .sidebar span { display: none; } .main { margin-left: 70px; } }
+
+        body {
+    background: #f8fafc;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+    font-size: 19px;   /* tăng cỡ chữ */
+}

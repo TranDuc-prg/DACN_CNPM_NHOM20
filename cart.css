@@ -1,0 +1,14 @@
+
+        body { background-color: #f8f9fa; font-family: 'Segoe UI', sans-serif; }
+        .card-custom { background: white; border-radius: 12px; padding: 25px; border: none; box-shadow: 0 2px 15px rgba(0,0,0,0.08); }
+        .section-title { font-weight: 700; color: #0a2d6d; margin-bottom: 20px; border-left: 4px solid #0a2d6d; padding-left: 10px; }
+        .cart-item-sm { display: flex; align-items: center; padding: 15px 0; border-bottom: 1px solid #eee; }
+        .cart-item-sm img { width: 60px; height: 60px; object-fit: cover; border-radius: 8px; margin-right: 12px; }
+        .qty-control { display: flex; align-items: center; background: #f1f3f5; border-radius: 20px; padding: 2px 8px; width: fit-content; }
+        .btn-qty { border: none; background: none; color: #0a2d6d; font-size: 12px; padding: 2px 8px; transition: 0.2s; }
+        .btn-qty:hover { color: #0d6efd; transform: scale(1.2); }
+        .payment-item { border: 1px solid #e0e0e0; border-radius: 10px; padding: 15px; margin-bottom: 12px; cursor: pointer; display: flex; align-items: center; transition: 0.2s; }
+        .payment-item.active { border-color: #0d6efd; background-color: #f0f7ff; box-shadow: 0 0 0 1px #0d6efd; }
+        #qr-verification-area { display: none; margin-top: 20px; padding: 20px; border: 2px dashed #0d6efd; border-radius: 12px; background: #fff; text-align: center; }
+        .qr-img-preview { width: 220px; height: 220px; margin: 15px 0; }
+ 

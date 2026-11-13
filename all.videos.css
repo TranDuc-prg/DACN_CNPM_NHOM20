@@ -1,0 +1,26 @@
+
+        body { background-color: #f8f9fa; }
+        .video-grid-card {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            aspect-ratio: 9/16; /* Giữ tỉ lệ chuẩn video ngắn */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+        }
+        .video-grid-card:hover { transform: translateY(-5px); }
+        .video-grid-card img { width: 100%; height: 100%; object-fit: cover; }
+        .badge-video {
+            position: absolute; top: 15px; left: 15px;
+            background: #ff9f43; color: white; padding: 5px 12px;
+            border-radius: 8px; font-size: 12px; font-weight: bold; z-index: 2;
+        }
+        .video-overlay {
+            position: absolute; bottom: 0; left: 0; right: 0;
+            padding: 20px 15px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.9));
+            color: white;
+        }
+        .video-title { font-size: 1rem; font-weight: 600; margin-bottom: 0; line-height: 1.4; }
+ 

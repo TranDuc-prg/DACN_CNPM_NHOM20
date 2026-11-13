@@ -1,0 +1,105 @@
+
+        :root { --video-orange: #ff9f43; --dark-bg: #1e293b; }
+        body { background-color: #f1f5f9; font-family: 'Inter', sans-serif; }
+        
+        /* Sidebar giống dashboard */
+        .sidebar { background: #2c3e50; min-height: 100vh; color: white; position: sticky; top: 0; }
+        .nav-link { color: rgba(255,255,255,0.7); padding: 12px 20px; transition: 0.3s; }
+        .nav-link:hover, .nav-link.active { color: white; background: rgba(255,255,255,0.1); border-radius: 5px; }
+
+        /* Video Card Preview */
+        .video-manage-card {
+            background: white; border-radius: 15px; overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: 0.3s;
+            border: none; height: 100%;
+        }
+        .video-manage-card:hover { transform: translateY(-5px); box-shadow: 0 12px 20px rgba(0,0,0,0.1); }
+        
+        .video-thumbnail-wrapper {
+            position: relative; height: 280px; overflow: hidden;
+        }
+        .video-thumbnail-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+        
+        .play-overlay {
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            background: rgba(255, 159, 67, 0.9); color: white;
+            width: 50px; height: 50px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 20px; opacity: 0.8; transition: 0.3s;
+        }
+        .video-manage-card:hover .play-overlay { opacity: 1; scale: 1.1; }
+
+        .video-badge {
+            position: absolute; top: 10px; left: 10px;
+            background: var(--video-orange); color: white;
+            padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: bold;
+        }
+
+        .video-info { padding: 15px; }
+        .video-title { font-size: 0.95rem; font-weight: 700; color: #334155; height: 40px; overflow: hidden; line-height: 1.4; }
+        
+        .action-btns {
+            display: flex; gap: 5px; padding: 10px 15px 15px; border-top: 1px solid #f1f5f9;
+        }
+   
+
+       /* ===== ADMIN TABLE FONT SIZE ===== */
+
+.table{
+font-size:25px;
+}
+
+.table th{
+font-size:25px;
+font-weight:700;
+}
+
+.table td{
+font-size:25px;
+}
+
+
+/* ===== SIDEBAR FONT SIZE ===== */
+
+.sidebar h4{
+font-size:28px;
+}
+
+.nav-link{
+font-size:20px;
+}
+
+.nav-link i{
+font-size:21px;
+}
+
+/* ===== TĂNG CHỮ BÊN PHẢI ===== */
+
+h3{
+font-size:32px;
+font-weight:700;
+}
+
+.video-title{
+font-size:20px;
+font-weight:700;
+line-height:1.5;
+height:auto;
+}
+
+.video-info{
+font-size:18px;
+}
+
+.video-info a{
+font-size:18px;
+}
+
+.video-info small{
+font-size:16px;
+}
+
+.action-btns .btn{
+font-size:17px;
+padding:8px 16px;
+}

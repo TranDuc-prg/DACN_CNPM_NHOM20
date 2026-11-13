@@ -1,0 +1,127 @@
+/* Custom Variable */
+:root {
+    --primary-color: #198754;
+    --accent-color: #f8f9fa;
+    --text-dark: #2d3436;
+    --text-muted: #636e72;
+    --font-main: 'Inter', sans-serif;
+    --font-heading: 'Playfair Display', serif;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-dark);
+    line-height: 1.8;
+    background-color: #fff;
+}
+
+/* Header & Title */
+.post-header {
+    padding: 60px 0 40px;
+    background: linear-gradient(to bottom, #f0f9f4, #ffffff);
+}
+
+.category-badge {
+    background: var(--primary-color);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.post-title {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Media (Image/Video) */
+.main-img, .video-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.main-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 500px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    border: none;
+}
+
+/* Content Area */
+.content-area {
+    font-size: 1.15rem;
+    color: #333;
+    text-align: justify;
+}
+
+.content-area h2, .content-area h3 {
+    font-family: var(--font-heading);
+    margin-top: 40px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Sidebar */
+.sidebar-consult {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    position: sticky;
+    top: 100px;
+    border: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.sidebar-consult:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05) !important;
+}
+
+/* Related Posts */
+.related-section {
+    background-color: var(--accent-color);
+    padding: 80px 0;
+}
+
+.related-card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.related-card:hover {
+    transform: translateY(-10px);
+}
+
+.related-card img {
+    border-radius: 15px 15px 0 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .post-title { font-size: 1.8rem; }
+    .content-area { font-size: 1rem; }
+}

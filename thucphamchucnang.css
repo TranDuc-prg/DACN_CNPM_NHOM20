@@ -1,0 +1,106 @@
+
+        :root {
+            --primary-tet: #d63031;
+            --bg-body: #fff9fa;
+            --text-size: 25px; 
+        }
+
+        body { 
+            background-color: var(--bg-body); 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            font-size: var(--text-size); 
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* --- Header & Search --- */
+        .tet-header { background: linear-gradient(135deg, #FF0055 0%, #FF7EB3 100%); padding: 50px 0; border-radius: 0 0 50px 50px; color: white; }
+        .script-font { font-size: 5rem; font-family: 'Dancing Script', cursive; }
+        .input-group { transform: scale(1.05); margin-top: 20px; } 
+        .form-control { font-size: 22px !important; padding: 15px 25px; border-radius: 50px 0 0 50px !important; }
+        .btn-search { border-radius: 0 50px 50px 0 !important; font-size: 22px; font-weight: 700; }
+
+        /* --- Navigation --- */
+        .nav-scroller { position: sticky; top: 0; z-index: 1020; background: #fff; padding: 20px 0; border-bottom: 3px solid var(--primary-tet); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .filter-pill { 
+            font-size: 25px; font-weight: 800; padding: 12px 30px; 
+            border: 2px solid #eee; border-radius: 50px; color: #444; 
+            text-decoration: none; margin-right: 15px; background: #fff;
+            white-space: nowrap; transition: 0.3s;
+        }
+        .filter-pill:hover { background: var(--primary-tet); color: #fff; border-color: var(--primary-tet); }
+
+        /* --- Product Card --- */
+        .product-card {
+            background: #fff; border-radius: 35px; padding: 25px;
+            border: 2px solid #fce4ec; height: 100%; display: flex; flex-direction: column;
+            transition: 0.3s;
+        }
+        .product-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(214, 48, 49, 0.15); }
+        
+        .img-box { 
+            width: 100%; height: 250px; margin-bottom: 20px;
+            display: flex; align-items: center; justify-content: center;
+            background: #fff; overflow: hidden;
+        }
+        .img-box img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+        .product-title {
+            font-size: 24px; font-weight: 700; min-height: 64px;
+            line-height: 1.3; margin-bottom: 15px; color: #111;
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+        }
+
+        .price-new { font-size: 32px; font-weight: 900; color: var(--primary-tet); margin-bottom: 20px; display: block; }
+        
+        .btn-add { 
+            font-size: 24px; font-weight: 800; padding: 18px; 
+            border-radius: 20px; background: var(--primary-tet); color: #fff; 
+            border: none; width: 100%; margin-top: auto; transition: 0.2s;
+        }
+        .btn-add:active { transform: scale(0.95); }
+
+        /* --- Footer & Others --- */
+        h3.section-title { font-size: 42px; font-weight: 800; border-left: 12px solid var(--primary-tet); padding-left: 20px; }
+        .cart-float { width: 90px; height: 90px; background: var(--primary-tet); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: fixed; bottom: 40px; right: 40px; color: #fff; text-decoration: none; z-index: 1000; }
+        
+        .newsletter-box { background: #0052cc; color: white; padding: 40px 60px; border-radius: 30px; }
+        .footer-links a { text-decoration: none; color: #666; transition: 0.3s; }
+        .footer-links a:hover { color: var(--primary-tet); padding-left: 10px; }
+        .social-icon { width: 50px; height: 50px; background: #f0f2f5; display: flex; align-items: center; justify-content: center; border-radius: 12px; color: #333; text-decoration: none; }
+        .contact-icon { width: 45px; height: 45px; background: #eef4ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #0052cc; flex-shrink: 0; }
+  
+
+        /* GIỎ HÀNG NỔI */
+
+.cart-float{
+position: fixed;
+right: 30px;
+bottom: 30px;
+width: 80px;
+height: 80px;
+background: #e74c3c;
+color: white;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+z-index: 9999;
+text-decoration: none;
+transition: 0.3s;
+}
+
+.cart-float:hover{
+transform: scale(1.1);
+background:#c0392b;
+}
+
+.cart-float i{
+font-size:34px;
+}
+
+.cart-float .badge{
+font-size:16px;
+padding:6px 8px;
+}

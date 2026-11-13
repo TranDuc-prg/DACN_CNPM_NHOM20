@@ -1,0 +1,164 @@
+
+        :root { 
+            --primary: #ff85a2; --secondary: #f72585; --accent: #ffb3c6; 
+            --bg: #fffafa; --dark-pink: #9d174d; --blue-main: #1545cc;
+        }
+
+        /* THIẾT LẬP CỠ CHỮ CHỦ ĐẠO 23PX */
+        body { 
+            background-color: var(--bg); 
+            font-family: 'Quicksand', sans-serif; 
+            color: #4a4a4a; 
+            font-size: 23px; 
+            line-height: 1.7;
+        }
+
+        /* HERO BANNER */
+        .hero-banner {
+            background: linear-gradient(135deg, rgba(255,133,162,0.85), rgba(247,37,133,0.7)), 
+                        url('https://images.unsplash.com/photo-1596462502278-27bfdc4033c8?auto=format&fit=crop&q=80&w=1600');
+            background-size: cover; background-position: center; color: white;
+            padding: 80px 0 120px 0; border-radius: 0 0 100px 100px;
+        }
+        .hero-banner h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 10px; }
+        .hero-banner p { font-size: 26px; opacity: 0.9; }
+
+        /* MENU CHẠY NGANG FULL GIAO DIỆN */
+        .filter-wrapper {
+            width: 95%;
+            margin: -60px auto 60px auto;
+            position: relative;
+            z-index: 10;
+        }
+        .filter-container {
+            background: white; 
+            padding: 15px 30px;
+            border-radius: 60px; 
+            box-shadow: 0 15px 40px rgba(247,37,133,0.15);
+        }
+        .nav-pills {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+        .nav-pills::-webkit-scrollbar { display: none; }
+        
+        .nav-item { flex: 1 0 auto; text-align: center; }
+        .nav-pills .nav-link { 
+            color: #666; font-weight: 700; border-radius: 50px; 
+            margin: 5px; transition: 0.4s; font-size: 22px;
+            padding: 15px 25px; white-space: nowrap;
+        }
+        .nav-pills .nav-link:hover { color: var(--secondary); background: #fff0f3; }
+        .nav-pills .nav-link.active { 
+            background: linear-gradient(45deg, var(--primary), var(--secondary)) !important; 
+            color: white !important;
+            box-shadow: 0 8px 20px rgba(247,37,133,0.3);
+        }
+
+        /* DANH SÁCH SẢN PHẨM */
+        .product-card { 
+            background: white; border-radius: 35px; transition: 0.4s; 
+            border: 1px solid #ffeef2; height: 100%; display: flex; 
+            flex-direction: column; overflow: hidden; padding: 20px;
+        }
+        .product-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(255,133,162,0.2); }
+        .product-img { width: 100%; height: 260px; object-fit: contain; border-radius: 20px; }
+        
+        .product-name { 
+            font-weight: 700; font-size: 22px; color: #333; 
+            margin: 20px 0; min-height: 2.8em; line-height: 1.4;
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+        }
+        .price-new { color: var(--secondary); font-weight: 800; font-size: 28px; margin-bottom: 25px; }
+        
+        .btn-action {
+            border-radius: 20px; font-weight: 700; padding: 15px; font-size: 18px; 
+            text-transform: uppercase; transition: 0.3s;
+        }
+        .btn-detail { background: #fff0f3; color: var(--secondary); border: 2px solid #ffeef2; margin-bottom: 10px; }
+        .btn-buy { background: linear-gradient(45deg, var(--primary), var(--secondary)); color: white; border: none; }
+        .btn-buy:hover { opacity: 0.9; transform: scale(1.02); }
+
+        /* ĐĂNG KÝ NHẬN TIN */
+        .newsletter-custom {
+            background: var(--blue-main); border-radius: 60px; 
+            padding: 60px; color: white; margin: 100px 0 80px 0;
+            box-shadow: 0 20px 50px rgba(21, 69, 204, 0.3);
+        }
+        .newsletter-custom h2 { font-size: 40px; font-weight: 800; }
+        .newsletter-custom p { font-size: 23px; opacity: 0.9; }
+        .input-group-custom {
+            background: white; border-radius: 50px; padding: 8px;
+            display: flex; width: 100%;
+        }
+        .input-group-custom input {
+            border: none; padding: 10px 30px; border-radius: 50px;
+            flex-grow: 1; outline: none; font-size: 21px;
+        }
+        .btn-subscribe {
+            background: #ffc107; color: #222; border: none; 
+            border-radius: 50px; padding: 15px 40px; font-weight: 800; font-size: 20px;
+        }
+
+        /* CHÂN TRANG (FOOTER) */
+        .footer-new { background: white; padding: 100px 0 40px 0; border-top: 1px solid #eee; }
+        .footer-new h6 { font-weight: 800; font-size: 22px; color: #222; margin-bottom: 30px; text-transform: uppercase; }
+        .footer-new ul li { margin-bottom: 15px; }
+        .footer-new ul li a { color: #666; text-decoration: none; font-size: 21px; transition: 0.2s; }
+        .footer-new ul li a:hover { color: var(--blue-main); padding-left: 5px; }
+        
+        .hotline-footer { color: var(--blue-main); font-size: 36px; font-weight: 800; text-decoration: none; }
+        .social-links a { color: var(--blue-main); font-size: 32px; margin-right: 25px; transition: 0.3s; }
+        .social-links a:hover { color: var(--secondary); transform: translateY(-5px); display: inline-block; }
+        
+        .bottom-bar { border-top: 1px solid #eee; padding-top: 40px; margin-top: 60px; font-size: 19px; color: #888; }
+        .payment-icons img { height: 30px; margin-left: 20px; filter: grayscale(100%); opacity: 0.6; transition: 0.3s; }
+        .payment-icons img:hover { filter: grayscale(0); opacity: 1; }
+
+        @media (max-width: 992px) {
+            .nav-pills { justify-content: flex-start; }
+            .hero-banner h1 { font-size: 2.5rem; }
+        }
+
+
+        /* GIỎ HÀNG NỔI */
+
+.cart-float{
+position:fixed;
+right:30px;
+bottom:30px;
+width:80px;
+height:80px;
+background:#ff4d6d;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:32px;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+z-index:9999;
+transition:0.3s;
+}
+
+.cart-float:hover{
+transform:scale(1.1);
+background:#e63950;
+}
+
+.cart-badge{
+position:absolute;
+top:-5px;
+right:-5px;
+background:#ffd166;
+color:#000;
+font-weight:bold;
+font-size:16px;
+padding:5px 8px;
+border-radius:50%;
+}
