@@ -237,104 +237,50 @@ VIET_DUC_PHARMACY/
 - Trình duyệt web (Google Chrome, Microsoft Edge hoặc tương đương).
 - Kết nối Internet khi sử dụng chức năng Gemini API.
 
-## 8. Hướng dẫn cài đặt và chạy dự án
+## 8. BẢO MẬT VÀ CÁC LƯU Ý
 
-### Bước 1. Tải mã nguồn
+Trong quá trình xây dựng hệ thống VIET DUC PHARMACY, nhóm chú trọng đến việc bảo vệ dữ liệu và kiểm soát quyền truy cập nhằm nâng cao tính an toàn và độ tin cậy của hệ thống.
 
-Clone repository về máy:
+Một số nội dung được quan tâm:
 
-```bash
-git clone <GITHUB_REPOSITORY_URL>
-```
+- **Bảo mật tài khoản:** Thông tin mật khẩu người dùng được xử lý bằng phương pháp mã hóa một chiều trước khi lưu trữ.
+- **Bảo vệ thông tin cấu hình:** Thông tin kết nối cơ sở dữ liệu, mật khẩu SMTP và API Key Gemini cần được bảo mật, không công khai trên GitHub.
+- **Phân quyền người dùng:** Các chức năng được phân chia theo vai trò quản trị viên, nhân viên và khách hàng.
+- **Kiểm soát dữ liệu:** Dữ liệu đầu vào được kiểm tra và xử lý trước khi thực hiện các thao tác với cơ sở dữ liệu.
+- **Bảo vệ dữ liệu:** Khuyến nghị sao lưu cơ sở dữ liệu định kỳ để hạn chế nguy cơ mất mát thông tin.
+- **Sử dụng chatbot AI:** Chatbot hỗ trợ tra cứu và cung cấp thông tin, không thay thế tư vấn chuyên môn của dược sĩ hoặc nhân viên y tế.
 
-Hoặc tải mã nguồn dưới dạng ZIP từ GitHub và giải nén.
+## 9. KẾT QUẢ ĐẠT ĐƯỢC
 
-### Bước 2. Mở dự án bằng Visual Studio Code
+Sau quá trình khảo sát, phân tích yêu cầu, thiết kế, xây dựng và kiểm thử, đề tài đã đạt được các kết quả chính sau:
 
-- Khởi động Visual Studio Code.
-- Chọn **File → Open Folder**.
-- Chọn thư mục chứa mã nguồn VIET DUC PHARMACY.
-
-### Bước 3. Cấu hình cơ sở dữ liệu
-
-- Khởi động MySQL Server.
-- Tạo cơ sở dữ liệu theo tên được sử dụng trong mã nguồn.
-- Import tệp SQL của dự án nếu có.
-- Kiểm tra thông tin kết nối trong:
-
-```text
-config/db.php
-```
-
-Cần kiểm tra các thông tin:
-
-- Địa chỉ máy chủ MySQL.
-- Tên cơ sở dữ liệu.
-- Tên đăng nhập.
-- Mật khẩu kết nối.
-
-### Bước 4. Cấu hình Gemini API
-
-Để sử dụng chức năng chatbot AI, cần cấu hình API Key của Gemini theo cách mà mã nguồn dự án đang sử dụng.
-
-**Lưu ý bảo mật:**
-- Không công khai API Key trên GitHub.
-- Không đưa mật khẩu cơ sở dữ liệu hoặc thông tin SMTP lên repository công khai.
-- Nên sử dụng biến môi trường hoặc tệp cấu hình riêng không được đưa vào Git.
-
-### Bước 5. Khởi chạy website
-
-Khởi động PHP và MySQL theo môi trường đã cài đặt.
-
-Có thể chạy PHP built-in server trong Terminal của Visual Studio Code nếu cấu hình dự án cho phép:
-
-```bash
-php -S localhost:8000
-```
-
-Sau đó truy cập:
-
-```text
-http://localhost:8000
-```
-
-Nếu dự án cần Document Root riêng hoặc cấu hình máy chủ cụ thể, hãy khởi chạy tại thư mục gốc phù hợp.
-
-## 9. Bảo mật và lưu ý khi sử dụng
-
-- Không chia sẻ tài khoản quản trị cho người không có quyền truy cập.
-- Không công khai thông tin đăng nhập cơ sở dữ liệu.
-- Không đưa API Key Gemini lên GitHub.
-- Kiểm tra dữ liệu đầu vào trước khi xử lý.
-- Chỉ cấp quyền truy cập phù hợp với từng nhóm người dùng.
-- Sao lưu cơ sở dữ liệu định kỳ.
-- Chatbot AI có vai trò hỗ trợ thông tin, không thay thế tư vấn chuyên môn của dược sĩ hoặc nhân viên y tế.
-
-## 10. Kết quả đạt được
-
-Sau quá trình phân tích, thiết kế và xây dựng, đề tài đã hướng đến hoàn thiện các nội dung:
-
-- Xây dựng website quản lý nhà thuốc bằng PHP và MySQL.
-- Xây dựng các chức năng quản lý và tra cứu thông tin.
-- Xây dựng hệ thống tài khoản và phân quyền.
-- Hỗ trợ quản lý đơn hàng và khách hàng.
-- Tích hợp chatbot AI sử dụng Gemini API.
+- Xây dựng website quản lý nhà thuốc VIET DUC PHARMACY bằng PHP và MySQL.
+- Xây dựng các chức năng quản lý sản phẩm, danh mục, khách hàng và đơn hàng.
+- Xây dựng hệ thống đăng ký, đăng nhập và phân quyền người dùng.
+- Hỗ trợ quản lý thông tin khuyến mãi và hoạt động kinh doanh của nhà thuốc.
+- Xây dựng chức năng thống kê và báo cáo nhằm hỗ trợ theo dõi hoạt động hệ thống.
+- Tích hợp chatbot AI sử dụng Gemini API để hỗ trợ khách hàng tra cứu và giải đáp thắc mắc.
 - Xây dựng chức năng chat trực tuyến giữa khách hàng và nhân viên.
-- Xây dựng giao diện hỗ trợ người dùng thao tác thuận tiện.
-- Vận dụng kiến thức Công nghệ phần mềm vào quá trình phát triển sản phẩm.
+- Bổ sung chức năng quản lý hội thoại và tiếp nhận yêu cầu hỗ trợ.
+- Xây dựng chức năng khôi phục mật khẩu thông qua email.
+- Hoàn thiện giao diện website theo hướng trực quan, thuận tiện cho người sử dụng.
 
-## 11. Hướng phát triển
+Thông qua quá trình thực hiện đề tài, nhóm đã vận dụng kiến thức về phân tích yêu cầu, thiết kế hệ thống, lập trình Web, quản lý cơ sở dữ liệu và kiểm thử phần mềm vào quá trình xây dựng sản phẩm.
 
-Trong tương lai, hệ thống có thể được mở rộng theo các hướng:
+## 10. HƯỚNG PHÁT TRIỂN
 
-- Nâng cấp giao diện và tối ưu trải nghiệm người dùng.
-- Hoàn thiện các chức năng quản lý và báo cáo.
-- Bổ sung thêm các phương thức thanh toán trực tuyến.
-- Nâng cao khả năng xử lý và phản hồi của chatbot AI.
-- Tăng cường bảo mật dữ liệu và tài khoản.
-- Tối ưu hiệu năng và khả năng mở rộng hệ thống.
+Trong tương lai, hệ thống có thể tiếp tục được nghiên cứu và mở rộng theo các hướng:
 
-## 12. Thông tin đồ án
+- Cải thiện giao diện và tối ưu trải nghiệm người dùng trên nhiều thiết bị.
+- Mở rộng các chức năng quản lý sản phẩm, đơn hàng và hoạt động kinh doanh.
+- Hoàn thiện hệ thống thống kê, báo cáo nhằm hỗ trợ phân tích dữ liệu.
+- Nghiên cứu bổ sung các phương thức thanh toán trực tuyến.
+- Nâng cao khả năng xử lý ngôn ngữ và chất lượng phản hồi của chatbot AI.
+- Hoàn thiện chức năng hỗ trợ khách hàng và quản lý hội thoại trực tuyến.
+- Tăng cường các biện pháp bảo mật và kiểm soát truy cập.
+- Tối ưu hiệu năng và khả năng mở rộng của hệ thống.
+
+## 11. THÔNG TIN ĐỀ TÀI
 
 | Nội dung | Thông tin |
 |---|---|
@@ -344,13 +290,18 @@ Trong tương lai, hệ thống có thể được mở rộng theo các hướn
 | Nhóm thực hiện | Nhóm 20 |
 | Ngôn ngữ lập trình | PHP |
 | Cơ sở dữ liệu | MySQL |
-| Công cụ phát triển | Visual Studio Code |
+| Công nghệ giao diện | HTML5, CSS3, JavaScript, Bootstrap 5 |
 | API tích hợp | Gemini API |
+| Công cụ phát triển | Visual Studio Code |
 
 ---
 
 <p align="center">
-  **VIET DUC PHARMACY – NHÓM 20**
-  
-  *Đồ án chuyên ngành Công nghệ phần mềm*
+
+**VIET DUC PHARMACY**
+
+**NHÓM 20 – ĐỒ ÁN CHUYÊN NGÀNH CÔNG NGHỆ PHẦN MỀM**
+
+*Trường Đại học Công nghệ Đông Á*
+
 </p>
