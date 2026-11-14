@@ -284,7 +284,7 @@ Trong tương lai, hệ thống có thể tiếp tục được nghiên cứu v�
 
 | Nội dung | Thông tin |
 |---|---|
-| Tên đề tài | Xây dựng website quản lý nhà thuốc VIET DUC PHARMACY |
+| Tên đề tài | Xây dựng Website bán thuốc |
 | Học phần | Đồ án chuyên ngành |
 | Chuyên ngành | Công nghệ phần mềm |
 | Nhóm thực hiện | Nhóm 20 |
