@@ -1,6 +1,6 @@
 # 🏥 VIET DUC PHARMACY – HỆ THỐNG QUẢN LÝ NHÀ THUỐC
 <p align="center">
-  ĐỀ TÀI : XÂY DỰNG WEBSITE BÁN THUỐC
+  #ĐỀ TÀI : XÂY DỰNG WEBSITE BÁN THUỐC
  
 </p>
 <p align="center">
