@@ -5,7 +5,6 @@
   
   **NHÓM 20**
 </p>
-  **Đề tài :Xây dựng Website bán thuốc**
 <p align="center">
     **Đề tài :Xây dựng Website bán thuốc**
 </p>
