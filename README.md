@@ -1,5 +1,4 @@
 # 🏥 VIET DUC PHARMACY – HỆ THỐNG QUẢN LÝ NHÀ THUỐC
-**Đề tài :Xây dựng Website bán thuốc**
 
 <p align="center">
   **ĐỒ ÁN CHUYÊN NGÀNH – CÔNG NGHỆ PHẦN MỀM**
