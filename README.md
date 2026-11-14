@@ -130,21 +130,53 @@ Hệ thống được xây dựng theo mô hình website Client – Server, bao 
 
 ## 6. Cấu trúc dự án
 
-Cấu trúc thư mục có thể được tổ chức theo các nhóm chức năng sau (tên và vị trí tệp thực tế phụ thuộc vào mã nguồn dự án):
+Cấu trúc thư mục được tổ chức theo các nhóm chức năng sau :
 
 ```text
+
 VIET_DUC_PHARMACY/
 │
 ├── config/
 │   ├── db.php
-│   └── chat_helpers.php
+│   ├── ai.php
+│   ├── chat_config.php
+│   ├── chat_helpers.php
+│   └── vnpay_config.php
 │
-├── assets/
-│   ├── css/
-│   ├── js/
-│   └── images/
+├── css/
+│   ├── login.css
+│   ├── register.css
+│   ├── index.css
+│   ├── dashboard.css
+│   ├── staff_dashboard.css
+│   ├── admin.user.css
+│   ├── cart.css
+│   ├── product.css
+│   ├── detail.css
+│   └── ... (các file CSS khác)
+│
+├── images/
+│   └── (hình ảnh sản phẩm, logo và tài nguyên)
+│
+├── kiem_thu/
+│   ├── chay_kiem_thu.php
+│   ├── chay_tat_ca.php
+│   ├── kiem_thu_nghiep_vu.php
+│   └── JMeter_500_requests.jmx
+│
+├── vendor/
+│   └── ... (các thư viện PHP được quản lý bởi Composer)
+│
+├── index.php
+├── login.php
+├── register.php
+├── logout.php
+├── forgot_password.php
+├── reset_password.php
 │
 ├── admin_users.php
+├── admin.gocsk.php
+├── dashboard.php
 ├── staff_dashboard.php
 ├── admin_chat.php
 ├── admin_chat_api.php
@@ -155,10 +187,36 @@ VIET_DUC_PHARMACY/
 ├── ai_chat.php
 ├── chat_live_api.php
 │
-├── login.php
-├── index.php
+├── product.php
+├── chitietsp.php
+├── detail.php
+├── cart.php
+├── track-order.php
+├── invoice.php
+├── vnpay_return.php
+│
+├── add_post.php
+├── edit_post.php
+├── delete_post.php
+├── all-posts.php
+├── all-videos.php
+├── manage_videos.php
+├── goc-suc-khoe.php
+│
+├── export_excel.php
+├── export_pdf.php
+├── get_chart_data.php
+├── load_products.php
+├── load_menu_products.php
+│
+├── chat_upgrade.sql
+├── password_reset.sql
+├── composer.json
+├── composer.lock
+├── backend_structure.txt
 │
 └── README.md
+
 ```
 
 **Một số nhóm thành phần quan trọng:**
